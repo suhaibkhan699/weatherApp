@@ -1,0 +1,7 @@
+npm init -y >> this will create package.json file
+
+npm i express dotenv cors needle >> dotenv is used to store env variables, needle is a lightweight http client and is used to from our server to make a request from public api
+
+npm i -D nodemon >> -D as its a dev dependency, nodemon will restart the server automatically we make a change
+
+npm i express-rate-limit apicache >> npm packages for rate limiting and caching
