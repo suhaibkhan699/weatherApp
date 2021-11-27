@@ -42,7 +42,7 @@ const addWeatherToDOM = (data) => {
     cityInput.value = ''
 }
 
-// Convert Kelvin to Fahrenheit
+// Convert Kelvin to Celcius
 const kelvinToCelcius = (temp) => {
     return Math.ceil(temp - 273.15)
 }
