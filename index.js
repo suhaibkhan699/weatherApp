@@ -9,8 +9,10 @@ const app = express()
 
 // rate limiting
 const limiter = rateLimit({
-    windowMs: 1 * 60 * 1000, // 1 min
-    max: 10
+    windowMs: 10 * 60 * 1000, // 10 min
+    max: 50,
+    standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+    legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 })
 
 app.use(limiter)

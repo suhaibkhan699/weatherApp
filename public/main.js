@@ -21,14 +21,14 @@ const fetchWeather = async (city) => {
         }
 
         const displayData = {
-            city: data.name,
-            temp: kelvinToCelcius(data.main.temp),
+            city: data.city,
+            temp: data.temp,
         }
 
         addWeatherToDOM(displayData)
 
     } catch (error) {
-        alert('Too many requests, please try again after 1 minute.')
+        alert('Too many requests, please try again after 10 minutes.')
         return
     }
 }
@@ -40,11 +40,6 @@ const addWeatherToDOM = (data) => {
     <h2>${data.temp} &deg;C</h2>
   `
     cityInput.value = ''
-}
-
-// Convert Kelvin to Celcius
-const kelvinToCelcius = (temp) => {
-    return Math.ceil(temp - 273.15)
 }
 
 // Event listener for form submission
@@ -59,4 +54,4 @@ weatherForm.addEventListener('submit', (e) => {
 })
 
 // Initial fetch
-fetchWeather('Delhi')
+fetchWeather('London')
