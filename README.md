@@ -1,5 +1,5 @@
 # WeatherApp
-• Weather Application that fetches data using a third‑party API key.<br />
+• A Weather Application that fetches data using a third‑party API key.<br />
 • Implemented an API Proxy Server with Node.js to avoid passing the key directly from the front end and to fetch data from VisualCrossingWeather API.<br />
 • Implemented Rate Limiting and Caching mechanisms to improve performance by limiting the number of requests users can make within a fixed time and storing responses for a set duration.
 
