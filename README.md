@@ -7,3 +7,6 @@ The rate limiting mechanism is used to limit the number of requests that users c
 
 ![image](https://user-images.githubusercontent.com/32563388/219830127-5a2a225a-ab66-46ed-a039-d6af52a44de4.png)
 
+![image](https://user-images.githubusercontent.com/32563388/220206137-6d8fb65c-621d-46d3-a726-fc904e632474.png)
+
+
